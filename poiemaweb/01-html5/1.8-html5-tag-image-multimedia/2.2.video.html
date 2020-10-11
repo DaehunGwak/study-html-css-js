@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+</head>
+
+<body>
+  <video id="player" width="640" height="360" poster="assets/images/wildlife-poster.png" controls autoplay muted>
+    <source src="assets/video/wildlife.mp4" type="video/mp4" />
+    지원 가능한 영상이 없습니다.
+  </video>
+  <button id="unmutePlayerButton" onclick="unmute()">unmute</button>
+
+  <script>
+    function unmute() {
+      const player = document.getElementById("player");
+      player.muted = false;
+    }
+  </script>
+
+  <pre>
+    [video 태그 속성 정리]
+    (audio 태그와 같은 설명은 제외)
+
+    src
+    poster: 영상 준비 중에 표시될 이미지 파일 경로
+    muted: 음소거 상태
+    preload
+    autoplay
+    loop
+    controls
+    width: 폭 (CSS 권장)
+    height: 높이 (CSS 권장)
+
+    [삽질]
+    크롬에선 비디오 오토플레이는 muted 된 상태에서만 지원 가능
+  </pre>
+</body>
+
+</html>
