@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* a 요소가 방문하지 않은 링크일 때 */
+    a:link { color: orange; }
+
+    /* a 요소가 방문한 링크일 때 */
+    a:visited { color: green; }
+
+    /* a 요소에 마우스가 올라와 있을 때 */
+    a:hover { font-weight: bold; }
+
+    /* a 요소가 클릭된 상태일 때 (마우스에서 클릭 한 후 떼기 전) */
+    a:active { color: blue; }
+    
+    /* text inpu 요소와 pw input 요소에 포커스가 들어와 있을 때 */
+    input[type=text]:focus,
+    input[type=password]:focus {
+      color: violet;
+    }
+  </style>
+</head>
+
+<body>
+  <a href="#" target="_blank">This is a link</a><br>
+  <input type="text" value="I'll be red when focused"><br>
+  <input type="password" value="I'll be red when focused">
+</body>
+</html>

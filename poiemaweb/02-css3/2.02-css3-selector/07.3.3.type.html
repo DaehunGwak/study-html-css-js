@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* p의 형제 중 첫번째 p */
+    p:first-of-type { color: red; }
+    p:last-of-type { color: blue; }
+    p:nth-of-type(2) { color: green; }
+    p:nth-last-of-type(2) { color: orange; }
+    p:first-child { background: brown;}
+  </style>
+</head>
+<body>
+  <h1>This is a heading</h1>
+  <p>The first paragraph.</p>
+  <p>The second paragraph.</p>
+  <p>The third paragraph.</p>
+  <p>The fourth paragraph.</p><hr>
+  <div>
+    This is in div
+    <p>The first paragraph.</p>
+    <p>The second paragraph.</p>
+    <p>The third paragraph.</p>
+    <p>The fourth paragraph.</p>
+  </div>
+</body>
+</html>

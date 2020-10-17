@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: black;
+      color: lightcoral;
+    }
+
+    div {
+      float: left;
+      width: 32%;
+      height: 200px;
+      background-color: red;
+      color: #000;
+      font-size: 3em;
+      line-height: 200px;
+      text-align: center;
+    }
+
+    div:hover {
+      background-color: lightcoral;
+    }
+
+    input:not([type=password]) {
+      background: yellow;
+    }
+
+    /* div 중 1, 4, 7 아닌 친구들만 */
+    div:not(:nth-of-type(3n+1)) {
+      margin-left: 2%;
+    }
+    div:not(:nth-of-type(n+4)) {
+      margin-bottom: 2%;
+    }
+  </style>
+</head>
+<body>
+  <section>
+    <input type="text" value="Text input">
+    <input type="email" value="email input">
+    <input type="password" value="Password input">
+  </section>
+  <section>
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+  </section>
+  <section>
+    <p>hello</p>
+  </section>
+</body>
+</html>

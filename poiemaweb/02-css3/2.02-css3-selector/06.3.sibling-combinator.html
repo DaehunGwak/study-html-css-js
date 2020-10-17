@@ -4,8 +4,49 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <style>
+    /* p 요소 형제 중 바로 아래에 있는 ul 요소 형제만 적용 */
+    p + ul { color: red; }
+    
+    /* h2 요소 형제 중 h2 아래에 위치 한 모든 ul 형제 요소에게 적용 */
+    h2 ~ ul { color: green; }
+
+  </style>
 </head>
 <body>
-  셀렉터 거 양이 너무 많은거 아니요
+  <div>A div element.</div>
+  <ul>
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Milk</li>
+  </ul>
+
+  <p>The first paragraph.</p>
+  <ul>
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Milk</li>
+  </ul>
+
+  <h2>header 2 Another list</h2>
+  <ul>
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Milk</li>
+  </ul>
+
+  <p>The second paragraph.</p>
+  <ul>
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Milk</li>
+  </ul>
+
+  <h3>header 3 Another list</h3>
+  <ul>
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Milk</li>
+  </ul>
 </body>
 </html>

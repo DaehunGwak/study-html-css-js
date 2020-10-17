@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* 가상 요소 셀렉터 (Pseudo-Element Selector) 
+        요소의 특정 부분에 스타일을 적용하기 위해 사용
+    */
+
+    p::first-letter { font-size: 3rem; }
+    p::first-line { font-style: oblique ; } /* 브라우저 상 첫번째 라인 */
+
+    /* 해당 요소에 content 에 해당하는 값을 앞뒤 공간에 삽입 */
+    h1::before {
+      content: " [h1::before] ";
+      color: royalblue;
+      font-size: 1rem;
+    }
+    h1::after {
+      content: " [h1::after] ";
+      color: rosybrown;
+      font-size: 1rem;
+    }
+
+    /* 드래그 영역에 적용될 스타일 (ios, safari 등 일부 사용 불가... 테스트해보니 safari 됨) */
+    p::selection {
+      color: white;
+      background-color: black;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>This is a heading</h1>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo illum sunt distinctio sed, tempore, repellat rerum et ea laborum voluptatum! Quisquam error fugiat debitis maiores officiis, tenetur ullam amet in!</p>
+</body>
+</html>

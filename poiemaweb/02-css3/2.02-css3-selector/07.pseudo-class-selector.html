@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /*
+      가상 클래스는 특정한 상태에 따라 스타일을 정의.
+      특정 상태란
+      - 마우스가 올라와 있을 때
+      - 링크 방문했을 때, 혹은 방문 아직 안했을 때
+      - 포커스가 들어와 있을 때
+      미리 정의된 이름이 있어 임의의 이름 사용 불가
+    */
+    /* a 요소가 hover 상태일 때 */
+    a:hover { color: red; }
+    /* input 요소가 focus 상태일 때 */
+    input:focus { background-color: yellowgreen; }
+  </style>
+</head>
+<body>
+  <a href="#">Hover Hover</a><br>
+  <input type="text" placeholder="Focus focus">
+</body>
+</html>

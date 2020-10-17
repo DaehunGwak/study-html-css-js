@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* p 요소 중 첫번째 자식을 선택 (모든 태그 자식의 첫번째 요소를 말함) */
+    /* (해당 뎁스의 첫번째 자식이 p 태그 라면 적용됨 이 더 잘어울리는 듯) */
+    p:first-child { color: red; }
+
+    /* 마지막 자식을 선택 인데... (해당 뎁스의 마지막 자식이 p 태그 라면 적용이 더 잘어울림)
+        하지만, 한 뎁스의 꼭 마지막 자식이 p 요소여야만 함
+        다른 태그라면 적용 안됨 */
+    p:last-child { color: blue; }
+
+    ol > li:nth-child(2n) { color: orange; } /* 짝수 */
+    ol > li:nth-child(2n+1) { color: green; } /* 홀수 */
+    ol > li:first-child { color: red; }
+    ol > li:last-child { color: blue; }
+    ol > li:nth-child(4) { background: brown; }
+
+    ul > :nth-last-child(2n+1) { color: red; } /* 홀수인데 시작점이 마지막 */
+    ul > :nth-last-child(2n) { color: blue; }
+  </style>
+</head>
+<body>
+  <p>body first paragraph</p><hr>
+
+  <h1>welcome header 1</h1>
+  <p>body second paragraph</p><hr>
+
+  <div>
+    <p>div first p</p>
+    <p>div second p</p>
+  </div><hr>
+
+  <div>
+    <pre>div first pre</pre>
+    <p>div second p</p>
+  </div><hr>
+
+  <ol>
+    <li>Espresso</li>
+    <li>Americano</li>
+    <li>Caffe Latte</li>
+    <li>Caffe Mocha</li>
+    <li>Caramel Latte</li>
+    <li>Cappuccino</li>
+  </ol>
+
+  <ul>
+    <li>Espresso</li>
+    <li>Americano</li>
+    <li>Caffe Latte</li>
+    <li>Caffe Mocha</li>
+    <li>Caramel Latte</li>
+    <li>Cappuccino</li>
+  </ul>
+</body>
+</html>

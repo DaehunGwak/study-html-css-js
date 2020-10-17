@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* input 요소가 사용 가능한 상태일 때,
+       input 요소 바로 뒤의 span 요소가 blue로 됨 */
+    input:enabled + span {
+      color: lightblue;
+    }
+
+    /* input 요소가 사용 불가능한 상태일 때,
+       input 요소 바로 뒤에 span요소가 아래 스타일이 지정됨 */
+    input:disabled + span {
+      color: lightgray;
+      text-decoration: line-through;
+    }
+
+    /* 체크 되면 뒤의 span 요소가 아래의 스타일이 지정됨 */
+    input:checked + span {
+      color: blue;
+    }
+  </style>
+</head>
+<body>
+  <input type="radio" name="gender" value="male" checked> <span>Male</span><br>
+  <input type="radio" name="gender" value="female"> <span>Female</span><br>
+  <input type="radio" name="gender" value="neuter" disabled> <span>Neuter</span><br>
+  <hr>
+  <input type="checkbox" name="vehicle" value="bicycle" checked> <span>i have bicycle</span><br>
+  <input type="checkbox" name="vehicle" value="car"> <span>i have car</span><br>
+  <input type="checkbox" name="vehicle" value="motorcycle" disabled> <span>i have motorcycle</span><br>
+</body>
+</html>
