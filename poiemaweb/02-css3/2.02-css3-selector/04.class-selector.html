@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* Class selector */
+    /* 자식에게 상속 됨 */
+    .container { color: blueviolet; }
+    /* not supported in IE */
+    #not-container { color: initial; }
+    /* 공백으로 여러개 지정 가능하여 미리 스타일 정의 하여 사용 권장. 재사용 측면에 좋음 */
+    .text-center { text-align: center; }
+    .text-large { font-size: 200% }
+    .text-red { color: red }
+    .text-blue { color: blue; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <p>container</p>
+    <p id="not-container">not-container</p>
+  </div>
+  <article class="container">
+    <p class="text-center">Center</p>
+    <p class="text-large text-red">Large Red</p>
+    <p class="text-center text-large text-blue">Center Large Blue</p>
+  </article>
+</body>
+</html>

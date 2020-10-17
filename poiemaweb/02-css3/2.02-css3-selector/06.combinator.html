@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* 후손 셀렉터: div 의 모든 후손(depth 상관 x) p 요소 가 적용 됨 */
+    div p { color: red; }
+    /* 자식 셀렉터: div 의 바로 직계 자식 p 요소 만 적용 됨 */
+    div > p { color: blue; }
+  </style>
+</head>
+<body>
+  <h1>Heading</h1>
+  <div>
+    <p>paragraph 1</p>
+    <p>paragraph 2</p>
+    <span>
+      <p>span paragraph 3</p>
+    </span>
+  </div>
+  <p>paragraph 4</p>
+</body>
+</html>

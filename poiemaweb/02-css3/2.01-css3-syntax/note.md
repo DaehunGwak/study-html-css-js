@@ -24,3 +24,19 @@ p {
 ## 3. Value, 속성값
 
 - "키워드", "크기 단위", "색상 표현 단위" 등, 특정 단위로 지정되는 속성값
+
+## 4. html css 연동
+
+> 예제 참고
+
+## 5. Reset CSS 사용하기
+
+- 모든 웹 브라우저엔 디폴트 스타일이 존재
+- 하지만 브라우저마다 상이
+- Reset CSS 는 기본적인 HTML 요소의 CSS를 초기화 하는데 사용
+
+### 자주 사용되는 Reset CSS
+
+- [Eric Meyer's reset](http://meyerweb.com/eric/tools/css/reset/)
+- [normalize.css](https://necolas.github.io/normalize.css/)
+

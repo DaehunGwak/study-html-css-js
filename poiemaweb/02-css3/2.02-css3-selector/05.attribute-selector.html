@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    /* pre 자식 중 a 태그 중 href 요소를 갖는 태그만 */
+    pre > a[href] { color: violet; }
+
+    /* a 태그 중 target 속성 값이 "_top" 과 일치하면 red */
+    a[target="_top"] { color: red; }
+
+    /* h4 요소의 title 속성 값이 공백 구분 된 단어 중 "first" 가 있다면 적용 (말이 어려우니 보시는게...) */
+    h4[title~="first"] { color: purple; }
+
+    /* h5 요소의 title 속성 값이 "en-" 으로 시작 or "en" 인 것 */
+    h5[title|="en"] { color: green; }
+
+    /* article 자식 중 a 요소의 href 속성이 https:// 로 시작하면 적용 */
+    article > a[href^="https://"] { font-size: 150%; }
+
+    /* .html 로 끝나면 적용 */
+    .test > a[href$=".html"] { color: red; }
+
+    /* test를 포함 하는 요소 (어떻게든) */
+    .test-star > div[class*="test"] { color: red; }
+    /* test를 공백 단위 단어로 포함하는 요소 */
+    .test-star > div[class~="test"] { background-color: yellow; }
+  </style>
+</head>
+<body>
+  <article>
+    <pre>
+      <a href="http://www.poiemaweb.com" target="_blank">poiemaweb.com</a>
+      <a href="http://google.com" target="_top">google.com</a>
+      <a>nothing.com</a>
+    </pre>
+    <hr>
+    <h4 title="heading first">heading first</h4>
+    <h4 title="heading-first">heading-first</h4>
+    <h4 title="heading second">heading second</h4>
+    <h4 title="firstheading">headingfirst</h4>
+    <hr>
+    <h5 title="en">en</h5>
+    <h5 title="en-us">en-us</h5>
+    <h5 title="us-en">us-en</h5>
+    <h5 title="en us">en us</h5>
+    <h5 title=" en-"> en-</h5>
+    <hr>
+    <a href="https://www.test.com">https://www.test.com</a><br>
+    <a href="http://www.test.com">http://www.test.com</a>
+    <hr>
+    <section class="test">
+      <a href="test.html">test.html</a><br>
+      <a href="test.jsp">test.jsp</a>
+    </section>
+    <hr>
+    <section class="test-star">
+      <div class="first_test">first_test</div>
+      <div class="second">second</div>
+      <div class="test">test</div>
+      <div class="first test">first test</div>
+      <div class="first-test">first-test</div>
+      <div class="firsttest">firsttest</div>
+      <p class="test">p test</p>
+    </section>
+  </article>
+</body>
+</html>
