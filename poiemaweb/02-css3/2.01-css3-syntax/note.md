@@ -39,4 +39,3 @@ p {
 
 - [Eric Meyer's reset](http://meyerweb.com/eric/tools/css/reset/)
 - [normalize.css](https://necolas.github.io/normalize.css/)
-

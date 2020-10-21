@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    body {
+      font-size: 14px;
+      /* 미지정 시 16px */
+    }
+    div {
+      font-size: 1.2rem;
+      font-weight: bold;
+      padding: 2em;
+      text-align: center;
+    }
+    .box1 { background-color: rgba(255, 0, 0, 0.2); }
+    .box2 { background-color: rgba(255, 0, 0, 0.4); }
+    .box3 { background-color: rgba(255, 0, 0, 0.6); }
+  </style>
+<body>
+  <pre>
+[rem: 배수]
+- root em => html 의 사이즈로 계산
+  </pre>
+
+  <div class="box1">
+    font-size: 1.2em = 14px * 1.2 = 16.8px
+    <div class="box2">
+      font-size: 1.2em = 14px * 1.2 = 16.8px
+      <div class="box3">
+        font-size: 1.2em = 14px * 1.2 = 16.8px
+      </div>
+    </div>
+  </div>
+</body>
+</html>
