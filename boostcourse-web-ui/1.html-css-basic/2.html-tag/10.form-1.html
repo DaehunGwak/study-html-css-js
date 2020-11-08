@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>form 1</title>
+  <style>
+    .input-text {
+      width: 200px;
+      height: 30px;
+      margin: 5px;
+    }
+    label {
+      width: 100px;
+      text-align: center;
+      display: inline-block;
+    }
+  </style>
+</head>
+<body>
+  <h1>Form 관련 요소</h1>
+  <hr>
+  <label for="input-id">ID:</label>
+  <input id="input-id" type="text" placeholder="영문으로만 써주세요." class="input-text"> 
+  <br>
+  <label for="input-pw">Password:</label>
+  <input type="password" class="input-text">
+  <hr>
+  <label for="input-radio">radio</label>
+  <input type="radio" name="input-radio" id="input-radio-m" checked> male
+  <input type="radio" name="input-radio" id="input-radio-f"> female
+  <br>
+  <label for="">checkbox</label>
+  <input type="checkbox" name="input-check"> 영화
+  <input type="checkbox" name="input-check" checked> 음악감상
+  <input type="checkbox" name="input-check"> 독서
+</body>
+</html>

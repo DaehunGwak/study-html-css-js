@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>form 3</title>
+  <style>
+    select {
+      width: 200px;
+      height: 30px;
+    }
+    label {
+      width: 100px;
+      text-align: center;
+      display: inline-block;
+    }
+    button {
+      margin: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h2>Form 3</h2>
+  <form action="./test.html">
+    <label for="input-location">사는 지역:</label>
+    <select name="input-location-name" id="input-location">
+      <option value="seoul">서울</option>
+      <option value="busan">부산</option>
+      <option value="daegu" selected>대구</option>
+    </select>
+    <br>
+    <label for="input-textarea">자기소개: </label>
+    <textarea name="input-textarea" id="" cols="10" rows="5" placeholder="자기소개는 짧게 부탁드립니다."></textarea>
+    <br>
+    <button type="button">button</button>
+    <button type="reset">reset</button>
+    <button type="submit">submit</button>
+  </form>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>form 2</title>
+  <style>
+    input {
+      margin: 5px;
+    }
+    img {
+      margin: 5px;
+    }
+    label {
+      width: 100px;
+      text-align: center;
+      display: inline-block;
+    }
+  </style>
+</head>
+<body>
+  <h3>form 2</h3>
+  <hr>
+  <form action="./test.html">
+    <label>test text</label>
+    <input type="text">
+    <br>
+    <label>file</label>
+    <input type="file">
+    <br>
+    <input type="submit" value="전송"> <!--form 태그에 해당되는 action을 취함-->
+    <input type="reset" value="취소"> <!--form 영역 안에 있는 데이터들을 초기화-->
+    <br>
+    <input type="button" value="등록"> <!--기본 동작이 없음, custom 하게 사용해야함 (js 동반)-->
+    <br>
+    <input type="image" src="./assets/button.png" alt="폼 버튼 이미지" height="30px"> <!--submit인데 image로 가능-->
+  </form>
+</body>
+</html>

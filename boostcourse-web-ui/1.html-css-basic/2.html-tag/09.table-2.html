@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Table Practice</title>
+  <style>
+    table {
+      border: 1px solid;
+      border-spacing: 0;
+      margin: 0 auto;
+    }
+    td, th {
+      border: 1px solid;
+      width: 60px;
+      height: 30px;
+      text-align: center;
+      border-top-width: 0;
+      border-left-width: 0;
+    }
+    th:last-child,
+    td:last-child {
+      border-right-width: 0;
+    }
+    tr:last-child td {
+      border-bottom-width: 0;
+    }
+    thead tr:last-child th {
+      border-right-width: 1px;
+    }
+  </style>
+</head>
+<body>
+  <!--
+    <colgroup>, <col>, scope, headers 태그 및 속성들 따로 공부해보기
+  -->
+  <table>
+    <caption>Specification values</caption>
+    <thead>
+      <tr>
+        <th rowspan="2" scope="col" id="grade">Grade.</th>
+        <th rowspan="2" scope="col" id="point">Point.</th>
+        <th colspan="2" scope="colgroup" id ="strength">Strength.</th>
+        <th rowspan="2" scope="col" id="percent">Percent.</th>
+      </tr>
+      <tr>
+        <th scope="col" headers="strength" id="st-kgmm">kg/mm</th>
+        <th scope="col" headers="strength" id="st-lbin">lb/in</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td scope="row" headers="grade">Hard</td>
+        <td headers="point">0.45</td>
+        <td headers="strength st-kgmm">56.2</td>
+        <td headers="strength st-lbin">80,000</td>
+        <td headers="percent">20</td>
+      </tr>
+      <tr>
+        <td scope="row">Medium</td>
+        <td>0.45</td>
+        <td>49.2</td>
+        <td>70,000</td>
+        <td>25</td>
+      </tr>
+      <tr>
+        <td scope="row">Soft</td>
+        <td>0.45</td>
+        <td>42.2</td>
+        <td>60,000</td>
+        <td>30</td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+</html>
