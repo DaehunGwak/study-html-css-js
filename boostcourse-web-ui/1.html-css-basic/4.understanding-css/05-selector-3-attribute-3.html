@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Selector 3: Attribute 3</title>
+  <style>
+    /* 부분 속성값
+    해당 속성의 일부값이 일치하면 적용
+
+    - [class~="bar"] : class 속성의 값이 공백 구분 된 것 중 "bar"가 포함되어 있는 요소
+    - [class^="bar"] : class 속성의 값이 "bar"로 시작되는 요소
+    - [class$="bar"] : class 속성의 값이 "bar"로 끝나는 요소
+    - [class*="bar"] : class 속성의 값이 "bar"가 포함되어 있는 요소
+    */
+    p[class~="color"] { color: red; }
+    p[class^="co"] { font-size: 20px; }
+    p[class$="or"] { color: blue; }
+    p[class*="ful"] { color: yellow; }
+  </style>
+</head>
+<body>
+  <p class="color hot">red</p>
+  <p class="cool color">blue</p>
+  <p class="colorful nature">yellow</p>
+</body>
+</html>

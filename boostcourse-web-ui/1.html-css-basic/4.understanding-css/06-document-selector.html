@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document Selector</title>
+  <style>
+    /* 자손(모든 자손들이 선택됨) 선택자 */
+    div span { color: red; }
+
+    /* 자식 선택자 */
+    div > span { text-shadow: 2px 2px 2px silver; }
+    
+    /* 인접 형제 선택자 */
+    div + span { font-weight: bold; }
+
+    /* 조합 */
+    body > div h1 + span {
+      font-style: italic;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <h1><span>HTML</span>: Hyper Text Markup Language</h1>
+    <span>CSS는 문서를 꾸며줍니다</span>
+  </div>
+  <span>JS는 문서를 동적으로 제어할 수 있습니다.</span>
+  <p>HTML과 CSS와 JS를 이용해서 멋진 웹 사이트를 제작할 수 있습니다.</p>
+</body>
+</html>

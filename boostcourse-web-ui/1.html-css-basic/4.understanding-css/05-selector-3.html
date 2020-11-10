@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Selector 3</title>
+  <style media="screen">
+    /* 다중 선택자
+    .class1.class2 {...}  : 클래스 2개다 적용된 태그에만 적용되는 스타일
+    #id1.class1 {...} : 해당 아이디에 해당 클래스가 붙으면 적용되는 스타일
+    p.class1 {...} : 해당 태그에 해당 클래스가 붙으면 적용되는 스타일
+    */
+    .text-html.text-css {
+      border: 1px solid;
+    }
+    .text-html {
+      color: purple;
+    }
+    .text-css {
+      text-decoration: underline;
+    }
+
+    #id-selector {
+      font-size: 20px;
+    }
+  </style>
+</head>
+<body>
+  <dl>
+    <dt class="text-html">HTML</dt>
+    <dd><span class="text-html">HTML</span>은 문서의 구조를 나타냅니다.</dd>
+    <dt class="text-css">CSS</dt>
+    <dd><span class="text-css">CSS</span>는 문서의 표현을 나타냅니다.</dd>
+    <dt class="text-html text-css">JS</dt>
+    <dd><span class="text-html text-css">JS</span>는 문서의 동작을 나타냅니다.</dd>
+    <p id="id-selector">id 선택자는 해쉬 기호를 사용합니다.</p>
+  </dl>
+</body>
+</html>

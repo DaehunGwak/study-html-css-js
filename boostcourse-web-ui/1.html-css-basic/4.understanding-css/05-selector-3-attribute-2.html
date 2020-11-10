@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Selector 3: Attribute 2</title>
+  <style>
+    /* 정확한 속성값
+    해당 속성의 값이 일치하면 적용
+    */
+    p[class="foo"] { color: silver; }
+    p[id="title"] { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <p class="foo">Hello</p>
+  <p class="bar">CSS</p>
+  <p class="baz" id="title">HTML</p>
+</body>
+</html>
