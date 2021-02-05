@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- meta 요소, 해당 문서 or 앱의 metadata를 담는 요소 -->
+
+  <!-- 문자 인코딩(해석 방법) UTF-8, EUC-KR(영문,한국), DB의 charset과 맞춰서 작업 -->
+  <meta charset="UTF-8"> 
+
+  <!-- viewport, 모바일 브라우저에서 화면을 어떻게 노출시킬 지 -->
+  <!-- 없으면 기본 화면 렌더링이 이상하게 동작 -->
+  <!-- 모바일 브라우저 = 태블릿 PC 포함 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO에 도움 주는 metadata -->
+  <meta name="description" content="인프런에서 공부한 내용 노트입니다."> <!-- 검색 결과에 대한 상세 설명 -->
+  
+  <!-- Social Metadata: Facebook - OpenGraph-->
+  <!-- Open Graph Protocol: https://ogp.me/ -->
+  <!-- Sharing Debugger: https://developers.facebook.com/tools/debug/ -->
+  <meta property="og:title" content="metadata element">
+  <meta property="og:description" content="메타데이터 요소에 대한 설명을 다루는 웹페이지">
+  <meta property="og:url" content="https://techhtml.dev">
+  <meta property="og:image" content="https://techhtml.dev/image/og.png">
+
+  <!-- Social Metadata: Twitter - Twitter Card -->
+  <!-- spec: https://developer.twitter.com/en/docs/twitter-for-websites/cards/overview/abouts-cards -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@ordi">
+  <meta name="twitter:title" content="metadata element">
+  <meta name="twitter:description" content="메타데이터 요소에 대한 설명을 다루는 웹페이지">
+  <meta name="twitter:image" content="https://techhtml.dev/image/og.png">
+
+  <!-- title 요소: 해당 애플리케이션의 제목 -->
+  <title>Ordi의 개발 블로그</title>
+
+  <!-- link 요소: 외부 문서 or 콘텐츠와 해당 문서 콘텐츠를 연결해주는 요소 -->
+  <link rel="stylesheet" href="./style.css">
+
+  <!-- style 요소: 페이지 내에서 사용하는 CSS를 정의하는 요소 -->
+  <!-- 하나라도 많은 HTTP requests는 성능 저하를 일으킬 여지가 있습니다. -->
+  <!-- lighthouse로 성능 분석을 해볼 수 있음 -->
+  <!-- style 요소 내부에 렌더링에 꼭 필요한 스타일만 담아두면 성능 개선에 좋음. -->
+  <!--
+    렌더링에 필수적인 CSS는 style에,
+    컴포넌트 단위 CSS 는 외부 CSS로 불러오면 성능 개선에 용이
+  -->
+  <style>
+    body {
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  
+</body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <!-- body 요소는 콘텐츠를 담는 HTML 요소 -->
+  <!-- body 요소 내부가 콘텐츠 대부분을 차지하니, 용량과 시맨틱에 유의 -->
+
+  <!-- heading 요소: 제목 -->
+  <!-- h1, h2, h3, h4, h5, h6 총 6단계의 요소로 구성 -->
+  <!-- h1이 가장 중요한 제목, h6 는 가장 덜 중요한 제목 -->
+
+  <!-- heading 요소를 사용하면 제목을 포함하는 익명 영역을 생성 (anonymous section) -->
+  <!-- h1 태그를 다시 만날 때 까지 익명 영역으로 생각하면 됨 -->
+  
+  <!--익명 영역 시작-->
+  <h1>HTML section 요소</h1>
+  <p>안녕하세요. 이 HTML 문서는 sections 콘텐츠를 설명하기 위한 문서입니다.</p>
+
+  <h2>HTML Article 요소</h2>
+  <p>...</p>
+  <!-- 익명 영역 종료 -->
+  <h1>종료~</h1>
+
+  <!-- heading 요소를 잘 구성하면, 페이지 전체의 outline을 그리는 데 용이해짐 -->
+  <!-- 페이지 전체의 구조를 잡는 행위: outline -->
+  <!-- 매우 중요오오오오 -->
+
+
+
+  <!-- section 요소 & article 요소 -->
+  <!-- 명시적인 영역 (section) 을 작성할때 section, article 요소를 활용할 수 있음 -->
+  <!-- 콘텐츠의 독립성에 따라 -->
+  <!-- 콘텐츠가 독립적이면 article -->
+  <!-- 콘텐츠가 다른 콘테츠와 연관이 있을 땐 section -->
+
+  <!-- div 의 요소는 잘 다루지 않나요? -->
+  <!-- section, article로 표현하기 어려운 어쩔수 없는 경우에만 div를 사용하기 권장 -->
+
+  <!-- article, section 요소 내에서는 heading 사용을 권장 -->
+  <article>
+    <h1></h1>
+    <p></p>
+    <section>
+      <h2></h2>
+      <p></p>
+    </section>
+    <section>
+      <h2></h2>
+      <p></p>
+    </section>
+  </article>
+
+
+  <!-- header, hgroup -->
+  <!-- header: 특정 콘텐츠의 시작 부분을 나타내는 요소 -->
+  <!-- hgroup: 헤딩 요소를 그룹화하여 제목 - 부제목 관계를 만드는 요소 (계층 x) -->
+  <article>
+    <header>
+      <h1>제목</h1>
+      <h2>부제목</h2> <!-- 부제목 목적으로 사용했지만 이렇게 사용하면 계층 관계를 가짐 -->
+      <hgroup> <!-- 외부 해석기 같은 친구들이 h1만 제목으로 인식하여 가져갈 수 있게 됨 -->
+        <h1>제목</h1>
+        <h2>부제목</h2>
+      </hgroup>
+      <p></p>
+    </header>
+    <section>
+      <h2></h2>
+      <p></p>
+    </section>
+    <section>
+      <h2></h2>
+      <p></p>
+    </section>
+  </article>
+
+  <!-- footer & address 요소 -->
+  <!--
+    footer
+      - article, section 등에서 사용
+      - 컨텐츠의 마무리
+      - copyright, 작성자 정보, 작성일 등에 사용 가능
+    address
+      - contact information (연락처, 주소 등)
+  -->
+  <footer>
+    <p>
+      <cite>출처: <a href="http://...">위키백과</a></cite>
+    </p>
+    <address>
+      <p>
+        작성자: <a href="mailto:rhkrgns56@naver.com">곽대훈</a>
+      </p>  
+    </address>
+    <p>
+      <time>2021-02-03</time>
+    </p>
+  </footer>
+
+  <!-- nav 요소 -->
+  <!--
+    - navigation의 약자
+    - 페이지 네비게이션 콘텐츠를 담는 요소
+    - 용법이 다양함
+      - 상단, 좌측 메뉴
+      - 콘텐츠 목차
+    - 크롤러가 nav, a 위주로 많이 해석함
+  -->
+  <article>
+    <nav>
+      <a href="#article-header">본문 제목</a>
+      <a href="#article-section">본문 내용</a>
+    </nav>
+    <header id="article-header">
+      <hgroup>
+        <h1>제목</h1>
+        <h2>부제목</h2>
+      </hgroup>
+      <p></p>
+    </header>
+    <section id="article-section">
+      <h2></h2>
+      <p></p>
+    </section>
+  </article>
+
+  <!-- aside 요소 -->
+  <!--
+    - 콘텐츠 전체의 흐름과는 크게 관련 없는 부분을 담는 요소
+    - 콘텐츠 추천, 광고 등을 담음
+    - 독립성을 보장
+  -->
+  <aside>
+    <iframe src="ad.html"></iframe>
+  </aside>
+</body>
+</html>
